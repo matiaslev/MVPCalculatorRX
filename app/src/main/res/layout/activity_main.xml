@@ -7,23 +7,34 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/count_label"
-        android:layout_width="wrap_content"
-        android:textSize="@dimen/activity_main_text_size"
+    <EditText
+        android:id="@+id/editText_first_number"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/intial_value"/>
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/main_first_number_hint" />
+
+    <EditText
+        android:id="@+id/editText_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/main_operation_hint" />
+
+    <EditText
+        android:id="@+id/editText_second_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/main_second_number_hint" />
 
     <Button
-        android:id="@+id/count_button"
+        android:id="@+id/button_equals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/inc"/>
-
-    <Button
-        android:id="@+id/reset_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/reset"/>
+        android:text="@string/equals"/>
 
 </LinearLayout>
