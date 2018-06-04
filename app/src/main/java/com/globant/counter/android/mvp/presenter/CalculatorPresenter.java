@@ -9,8 +9,8 @@ import com.globant.counter.android.util.bus.observers.EqualsButtonPressedObserve
 
 public class CalculatorPresenter {
 
-    private CalculatorModel model;
-    private CalculatorView view;
+    private  final CalculatorModel model;
+    private final CalculatorView view;
 
     public CalculatorPresenter(CalculatorModel model, CalculatorView view) {
         this.model = model;
